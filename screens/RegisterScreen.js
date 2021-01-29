@@ -2,8 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Navigator from './navigation/Navigator';
-
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
@@ -13,8 +11,13 @@ const styles = StyleSheet.create({
 	}
 });
 
-const App = () => {
-	return <Navigator />;
+const RegisterScreen = () => {
+	return (
+		<View style={styles.container}>
+			<Text>Register</Text>
+			<StatusBar style="auto" />
+		</View>
+	);
 };
 
-export default App;
+export default RegisterScreen;
